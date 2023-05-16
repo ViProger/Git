@@ -1,0 +1,35 @@
+/* body{
+    background-image: url(../images/bg1.jpg);
+} */
+
+h1 {
+   text-align: right;
+    
+    color: green;
+}
+
+h2 {
+    text-align: center;
+    width: 300px;
+ }
+ 
+ table {
+
+    width: 500px;
+ }
+
+ th {
+
+    text-align: left;
+ }
+
+ 
+td {
+    text-align: center;
+    
+ }
+
+ p {
+    text-align: justify;
+    width: 300px;
+ }

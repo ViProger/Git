@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <hr />
+    <ul>
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="page.html">первая страница</a></li>
+      <li><a href="1.html">Работа с изображениями на HTML</a></li>
+      <li><a href="2.html">Работа с таблицами на HTML</a></li>
+      <li>
+        <a href="3.html">Практика на основные HTML теги</a>
+      </li>
+      <li><a href="4.html">Основы работы с языком CSS</a></li>
+      <li><a href="8.html">Селекторы</a></li>
+      <hr>
+      <li><a href="7.html">Практическая страница с языком CSS</a></li>
+      <li>
+        <a href="5.html">Практическая страница простейшего позиционирования</a>
+      </li>
+      <li><a href="6.html">Практическое задание №2</a></li>
+      <hr>
+      <li><a href="Mypage.html">Моя страница</a></li>
+      
+    </ul>
+    <hr />
+
+    <h1>Основы работы с языком CSS</h1>
+
+    <p>
+      Изучива стандартные и основные теги HTML мы сделали основную структуру
+      сайта, а вот что же с красотой, ведь сайт должен привлекать внимание и
+      быть приятным внешне. За это отвечает язык стилей CSS
+    </p>
+
+    <p>
+      Как бравило команды (стили) Хранятся в отдельном файле и подлкючаются к
+      страницам с помощтю следующей конструкции:
+    </p>
+
+    <xmp><link rel="stylesheet" href="имяФайла.css"></xmp>
+
+    <h1>Как работать с CSS</h1>
+
+    <p>
+      Каждому тегу из HTML соответствует одноименный селектор в CSS. Например
+      чтобы обратится ко всем обзацам и покрасить их в один цвет нужно обратится
+      к селектору р. Следом за селектором ставятся фигурные скобки внутри
+      которых находятся свойства отвечают за, собствнно свойства обекта, тоесть
+      цвет, размер, форма, и прочее. В своем время свойства имеют свои значения,
+      например свойство цвет имеет значение красный. Выглядит это следующим
+      образом
+    </p>
+
+    <xmp
+>p {
+    color: red;
+}
+</xmp
+    >
+
+    <p>
+      Помимо ключевого слова red можно использовать и другие цвета на английсокм
+      языке.
+    </p>
+
+    <h1>Способы задания цветов в CSS</h1>
+
+    <p>
+      Помимо английских слов есть и другие способы задания цвета, так как
+      ключивыми словами не получится сделать всевозможные оттенки и цвета.
+    </p>
+    <p>Первый способ задания цвета RGB</p>
+
+    <xmp
+>
+    p {
+	color: rgb(255, 236, 114);
+}
+</xmp
+    >
+    <p>Второй способ задания цвета #</p>
+    <xmp
+>
+    p {
+	color: #FF2547;
+}
+</xmp
+    >
+
+    <h1>Ширина и высота элементов на CSS</h1>
+
+    <p>
+      Ширена и высота задаются уже изучеными нами ранее свойствами width и
+      height. Значения этих свойств задаются в пикселях что обозначается как px.
+    </p>
+
+    <table border="1">
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <p>Дана следующая таблица. Сделать ячейки 400 ширеной и 300 высотой</p>
+
+    <table border="1">
+      <tr>
+        <td class="z1">Иван</td>
+        <td class="z1">Иванов</td>
+        <td class="z1">200$</td>
+      </tr>
+      <tr>
+        <td class="z1">Николай</td>
+        <td class="z1">Петров</td>
+        <td class="z1">300$</td>
+      </tr>
+      <tr>
+        <td class="z1">Владимир</td>
+        <td class="z1">Сидоров</td>
+        <td class="z1">400$</td>
+      </tr>
+    </table>
+
+    <hr />
+    <a href="5.html"><h1 class="pzs">Практическое задание</h1></a>
+    <hr />
+
+    <h1>Жирность текста на CSS</h1>
+
+    <p>
+      В данном уроке мы с вами изучим свойство font-weight, которое позволяет
+      сделать текст жирным или наоборот - отменить жирность (к примеру, для
+      заголовков, которые жирные по умолчанию). Чтобы сделать текст жирным,
+      следует указать значение bold, а чтобы отменить жирность - значение
+      normal. Это свойство работает аналогично тегу b, который мы с вами уже
+      разобрали. Разница в том, что через CSS управлять жирностью гораздо
+      удобнее - я могу заставить все абзацы стать жирными, а все заголовки -
+      нежирными, сделав всего пару записей в CSS файле. Если бы я делал жирный
+      через тег b - мне пришлось бы содержимое каждого абзаца обернуть в этот
+      тег, а это было бы очень затратным по времени (а если я потом захочу
+      убрать жирность абзацам - мне придется убирать все эти теги, представьте,
+      сколько это лишней, бесполезной работы).
+    </p>
+
+    <table border="1" class="tbtz">
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Зарплата</th>
+      </tr>
+      <tr>
+        <td>Иван</td>
+        <td>Иванов</td>
+        <td>200$</td>
+      </tr>
+      <tr>
+        <td>Николай</td>
+        <td>Петров</td>
+        <td>300$</td>
+      </tr>
+    </table>
+
+    <h1>Курсив текста на CSS</h1>
+
+    <p>
+      Свойство Font-style позволяет сделать текст курсивным или наоборот -
+      отменить курсив. Чтобы сделать текст курсивом следует добавить свойству
+      значение italic, в противном случае normal. Например:
+    </p>
+
+    <p class="cursiv">абзац с текстом для демонстрации работы курсива в CSS</p>
+
+    <h2 class="frt">Тестовый заголовок согласно задания сделан курсивом</h2>
+
+    <h1>Размер шрифта на CSS</h1>
+
+    <p>
+      Чтобы изменить размер шрифта нужно использовать свойство font-size, оно
+      принимает значения в пикселях
+    </p>
+
+    <hr />
+    <a href="6.html"><h1 class="pzs">Практическое задание №2</h1></a>
+    <hr />
+
+    <h1>Тип шрифта на CSS</h1>
+
+    <p>
+      Свойство font-family позволяет задать семейство шрифта. Наиболее
+      распространенные шрифты: Times New Roman (стоит по умолчанию), Arial,
+      Georgia, Verdana, Trebuchet MS, Impact, Arial Black, Comic Sans MS,
+      Courier New.
+    </p>
+
+    <p>Задача попробовать каждый из приведенных выше шрифтов</p>
+
+    <p class="TNR">Times New Roman</p>
+    <p class="ARL">Arial</p>
+    <p class="GORG">Georgia</p>
+    <p class="VERD">Verdana</p>
+    <p class="TREBUC">Trebuchet MS</p>
+    <p class="IMP">Impact</p>
+    <p class="ARBL">Arial Black</p>
+    <p class="COMSA">Comic Sans MS</p>
+    <p class="COURN">Courier New</p>
+
+    <h1>Межстрочный интервал на CSS</h1>
+
+    <p>
+      Давайте теперь научимся задавать межстрочный интервал тексту. Под
+      межстрочным интервалом подразумевается расстояние между линиями текста, то
+      есть белый промежуток между ними. Для этого предназначено свойство
+      line-height, задающее высоту линии текста. При использовании свойства
+      line-height вас может ожидать некоторый подвох: это свойство не задает
+      промежуток между строками текста, как могло бы показаться, а задает высоту
+      линии текста. Это значит, что реальный видимый промежуток между строками
+      будет вычисляться так: line-height - font-size = видимое расстояние между
+      строками текста. В следующем примере расстояние между строками текста
+      будет 50px - 20px = 30px:
+    </p>
+
+    <hr />
+    <xmp>
+
+    <p>
+        длинный текст...
+    </p>
+
+
+    p {
+        font-size: 20px;
+        line-height: 50px;
+        text-align: justify;
+        width: 400px;
+    }
+
+</xmp>
+
+    <p class="zadanie">Задание</p>
+
+    <p class="zadanie">
+      Пусть размер шрифта для абзацев равен 30px. Установите свойство
+      line-height так, чтобы видимый белый промежуток между абзацами был равен
+      15px.
+    </p>
+
+    <p class="tz2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a
+      dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu
+      commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor
+      nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem
+      vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut
+      duir.
+    </p>
+
+    <h1>Значение line-height без единиц</h1>
+
+    <p>
+      Значением свойства line-height не обязательно должно служить число в
+      некоторых единицах. Можно также просто написать число или дробь. В этом
+      случае настоящее значение line-height можно будет найти, умножив его на
+      значение font-size. К примеру, font-size равен 10px, а line-height - 1.5.
+      В этом случае реальное значение line-height будет 10px * 1.5 = 15px. Ну, а
+      видимый белый промежуток между линиями текста будет 5px: 15px - 10px =
+      5px. Преимущество такого способа задания line-height в том, что при
+      изменении размера шрифта автоматически будет меняться и межстрочный
+      интервал. Посмотрим применение описанного на примере:
+    </p>
+
+    <xmp>
+    <p>
+      длинный текст...
+    </p>
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: justify;
+      width: 400px;
+    }
+
+
+  </xmp>
+
+    <p class="zadanie">Задание</p>
+
+    <p class="zadanie">
+      Пусть размер шрифта для абзацев равен 30px. Установите свойство
+      line-height так, чтобы видимый белый промежуток между абзацами был равен
+      15px. Используйте для этого значение line-height без единиц.
+    </p>
+
+    <p class="tz3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a
+      dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu
+      commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor
+      nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem
+      vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut
+      duir.
+    </p>
+
+    <hr />
+
+    <h1>Свойство-сокращение FONT</h1>
+
+    <p>
+      Ранее мы рассмотрели множество свойств отвечающих за отображение шрифта,
+      семейство, жирность, курсив и прочее. ДЛя упрощения работы с данными
+      свойствами в CSS существует свойство-сокращение FONT. Оно нужно например
+      чтобы задать всем параграфам на сайте или странице одинаковый стиль.
+    </p>
+
+    <p>Синтаксис данного свойства следующий:</p>
+
+    <p>КУРСИВ ЖИРНОСТЬ РАЗМЕР/Межстрочный_ИНТЕРВАЛ семейство</p>
+
+    <p>
+      При этом важно учесть порядок написания значений, А так же обязательными
+      значениями являются "размер шрифта" и "Семейство". Так же следует учесть,
+      что другие значения кроме описаных выше не входят в данное сокращение.
+    </p>
+
+    <p>
+      Например следующие записи равнозначны друг другу. Но ведь вторая проще и
+      компактнее.
+    </p>
+
+    <xmp
+>
+
+      p {
+
+        font-size: 16px;
+        font-family: Arial;
+      }
+
+      Или 
+
+      p {
+
+        Font: 16px Arial;
+
+      }
+
+
+    </xmp>
+
+    <xmp
+>
+      p {
+        font-size: 16px;
+        font-family: Arial;
+        line-height: 50px;
+      }
+
+      Или 
+
+      p {
+
+        Font: 16px/50px Arial;
+
+      }
+
+
+    </xmp>
+
+    <xmp
+>
+      p {
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      Или 
+
+      p {
+
+        Font: bold 16px Arial;
+
+      }
+
+
+    </xmp>
+
+    <hr />
+    <h2>Практические задания</h2>
+
+    <p>Сократите код, используя свойство-сокращение font:</p>
+
+    <xmp
+>
+
+  p {
+    font-family: "Times New Roman";
+    font-size: 13px;
+    line-height: 20px;
+  }
+</xmp
+    >
+
+    <p>Результат</p>
+
+    <xmp
+>
+
+  p {
+    font: 13px/20px "Times New Roman";
+    }
+</xmp
+    >
+    <hr />
+
+    <p>Сократите код, используя свойство-сокращение font:</p>
+
+    <xmp
+>
+  p {
+    width: 300px;
+    font-family: Arial;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+  }
+ 
+</xmp
+    >
+
+    <p>Результат</p>
+    <xmp
+>
+
+  p {
+    width: 300px;
+    color: red;
+    font:Bold 40px Arial; 
+    }
+ 
+</xmp
+    >
+
+    <hr />
+
+    <p>Сократите код, используя свойство-сокращение font:</p>
+
+    <xmp
+>
+  p {
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-indent: 50px;
+    font-style: italic;
+    line-height: 60px;
+  }
+ 
+</xmp
+    >
+
+    <p>Результат</p>
+    <xmp
+>
+
+  p {
+
+    text-indent: 50px;
+    font:Bold italic 40px/60px Arial; 
+    }
+ 
+</xmp
+    >
+
+    <hr />
+
+    <h1>Красная стройка текста CSS</h1>
+
+    <p>
+      Чтобы текст на сайте имел отступы в первых строках, как в книге например.
+      Используется свойство text-indent Это упростить восприятие написанного
+      текста.
+    </p>
+
+    <p>Например:</p>
+
+    <xmp>
+    <p class="tz3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a
+      dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu
+      commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor
+      nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem
+      vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut
+      duir.
+    </p>
+
+    p {
+      text-indent: 50px;
+      text-align: justify;
+      width: 400px;
+    }
+  </xmp>
+
+    <p class="tz4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elitorire aenean a
+      dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu
+      commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor
+      nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem
+      vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut
+      duir.
+    </p>
+
+    <hr />
+
+    <h1>Эффекты текста на CSS</h1>
+
+    <p>
+      Свойство text-decoration позволяет задавать некоторые эффекты для текста:
+      подчеркивание, перечеркивание, линию сверху, а также отменять такие
+      эффекты, если какой-либо тег имеет их по умолчанию. Чаще всего это
+      свойство используются для отмены подчеркивания ссылок (они по умолчанию
+      подчеркнуты)
+    </p>
+
+    <p>Свойство text-decoration может принемать следующие значения:</p>
+    <br />
+    <p class="overl">Overline - линия сверху</p>
+    <p class="undl">Underline - линия снизу</p>
+
+    <p class="inl">line-through - линия зачеркивает текст</p>
+    <p class="nonel"><a href="#">none - Значение убирает все эффекты</a></p>
+  </body>
+</html>
