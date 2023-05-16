@@ -1,0 +1,187 @@
+body{
+    background-attachment: fixed;
+    background-image: url(../images/bg2.jpg);
+}
+
+.stops {
+  padding: auto;
+  margin: auto;
+  border: 2px dotted blue;
+  text-align: center;
+  width: 400px;
+  text-decoration: none;
+}
+
+
+a.stops  {
+  font-size: 22pt;
+  color: red;
+  text-decoration: none;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    
+    padding: auto;
+    width: 100%;
+    color: black;
+    background-color: rgb(0, 176, 207);
+  }
+
+  div {
+    background-color: rgba(211, 211, 211, 0.568);
+    padding: 5px;
+    margin: auto;
+    width: 60vw;
+    min-height: 10vh;
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 5%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+  }
+
+  .lnk:hover {
+    color: blue;
+  }
+
+  .lnk:visited {
+    color: purple;
+  }
+
+.lnk:active{
+color: red;
+}
+
+.inblock {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul.test-menu a {
+    width: 100px;
+    text-decoration: none;
+    font-size: 20pt;
+    
+}
+
+a li {
+    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px gray solid;
+    list-style-type: none;
+}
+
+a li:hover {
+    
+    background: rgb(184, 224, 3);
+  
+}
+
+xmp .xmp {
+    text-align: justify;
+    padding: auto;
+    margin: auto;
+    background-color: rgb(156, 154, 154);
+    width: 80%;
+}
+
+table, tr, td {
+    padding: 5px;
+    empty-cells: hide;
+    border:  1px solid black;
+}
+
+.pust {
+  border: 1px solid red;
+}
+
+*:empty {
+  border: 1px solid green;
+}
+
+.indiv{
+  margin: auto;
+  padding: 5px;
+  width: 80%;
+
+}
+
+.fot p:first-of-type {
+
+  color: red;
+
+}
+
+.fot p:first-child {
+
+  color: red;
+
+
+}
+
+          xmp {
+            padding: auto;
+            margin: auto;
+            width: 80%;
+            background-color: rgb(233, 243, 88);
+            border-left: 3px dashed red;
+            border-radius: 4px 40px 4px 40px;
+          }
+
+.attent {
+  font-size: 22pt;
+  background-color: red;
+}
+
+.test1 li:not(:first-child, :last-child) {
+  color:red;
+}
+
+.pustcircul:empty {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  color: green;
+}
+
+                            .snoska {
+                              font-size: 15pt;
+                              text-align: center;
+                              padding: auto;
+                              margin: auto;
+                              width: 80%;
+                              background-color: rgb(233, 243, 88);
+                              border-left: 3px solid red;
+                              border-right: 3px double red;
+                            }
+
+                            .dotted {
+                              border: dotted;
+                            }
+
+                            .dashed {
+                              border: dashed;
+                            }
+
+                            .ridge {
+                              border: ridge;
+                            }
+
+                            .double {
+
+                              border: double;
+                            }
+
+.bradius:empty {
+  background-color: rgba(255, 255, 255, 0);
+  height: 150px;
+  width: 150px;
+  border: 3px solid;
+  border-radius: 100px;
+}
