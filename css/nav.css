@@ -11,6 +11,10 @@ nav ul
 } 
 
 
-nav ol li {
-    border: 3px solid red;
+li{
+    padding: 5px;
+    background: white;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 5px;
 }
