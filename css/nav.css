@@ -3,3 +3,12 @@ nav {
     
     
 }
+
+nav ul
+{
+    display: inline-block;
+    
+} 
+nav ol li {
+    border: 3px solid red;
+}
