@@ -11,7 +11,7 @@ nav ul
 } 
 
 
-li{
+nav ul li{
     padding: 5px;
     background: white;
     display: inline-block;
