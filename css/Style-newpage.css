@@ -84,3 +84,9 @@ p {
     font-size: 22pt;
     color: rgb(163, 8, 8);
 }
+
+.navdiv {
+    margin: 0 auto;
+    padding: 0 auto;
+    background: rgba(0, 0, 0, 0.397);
+}
