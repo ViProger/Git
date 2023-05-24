@@ -53,7 +53,7 @@ a:hover{
 
  @media (max-width: 1000px) {
 
-    nav {
+    header {
         display: none;
     }
 
@@ -65,17 +65,7 @@ a:hover{
 
 
 
-@media (min-width: 1001px) {
 
-    nav {
-        display: block;
-    }
-
-    .dropmenu {
-        display: none;
-    }
-        
-} 
     
 .dropbtn {
    
@@ -91,7 +81,7 @@ a:hover{
     float: right;
     text-align: center;
     position: relative;
-    display: inline-block;
+    display: none;
 }
 
 .navig {
