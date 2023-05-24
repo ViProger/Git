@@ -71,8 +71,11 @@ p {
     color: rgb(163, 8, 8);
 }
 
-.navdiv {
-    margin: 0 auto;
-    padding: 0 auto;
+
+header {
+    margin-left: -0.5%;
+    margin-top: -16px;
+    min-height: 1vh;
+    width: 101%;
     background: rgba(0, 0, 0, 0.397);
 }
