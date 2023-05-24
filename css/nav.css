@@ -1,11 +1,11 @@
 
 header {
-    margin-left: -0.5%;
-    margin-top: -16px;
-    min-height: 1vh;
-    width: 101%;
-    background: rgba(0, 0, 0, 0.397);
-    box-shadow: 0px 2px 8px black;
+margin-left: -0.5%;
+margin-top: -16px;
+min-height: 1vh;
+width: 101%;
+background: rgba(0, 0, 0, 0.397);
+box-shadow: 0px 2px 8px black;
 }
 
 nav {
@@ -16,11 +16,11 @@ box-sizing: border-box;
 
 nav ul {
 box-shadow: inset 2px black;
- text-align: center;
-   /* border: 2px solid rgb(0, 0, 0); */
-    border-left: 0px;
-    border-right: 0px;
-    box-sizing: border-box;
+text-align: center;
+/* border: 2px solid rgb(0, 0, 0); */
+border-left: 0px;
+border-right: 0px;
+box-sizing: border-box;
 
 }
 
@@ -31,109 +31,102 @@ padding: 5px;
 display: inline-block;
 }
 
-        
+
 a {
-   
-    font-size: 14pt;
-    background-color: rgb(255, 196, 0);
-    display: inline-block;
-  text-decoration: none;
-  transition: .6s;
+
+font-size: 14pt;
+background-color: rgb(255, 196, 0);
+display: inline-block;
+text-decoration: none;
+transition: .6s;
 
 }
 
 a:hover{
-    background-color: rgb(0, 255, 34);
-    transition: .6s;
-    transform: scale(.9);
-    
+background-color: rgb(0, 255, 34);
+transition: .6s;
+transform: scale(.9);
+
 }
 
 
 
- @media (max-width: 1000px) {
+@media (max-width: 1000px) {
 
-  div.dropmenu {
-        display: inline-block;
-    }
+div.dropmenu {
+display: inline-block;
+}
 
-  
-    header {
-        display: none;
-    }
-      
+
+header {
+display: none;
+}
+
 } 
 
 
-
-
-
-
-
-
-    
 .dropbtn {
-   
-    background-color: rgba(0, 0, 0, 0.747);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    
+
+background-color: rgba(0, 0, 0, 0.747);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+
 }
 
 .dropmenu {
-    float: right;
-    text-align: center;
-    position: relative;
-    display: none;
+float: right;
+text-align: center;
+position: relative;
+display: none;
 }
 
 .navig {
-    margin-top: auto;
-    right: 0px;
-    /* display: block; */
-    position: absolute;
-    
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.747);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    transition: 0.3s;
-    opacity: 0;
-    padding:  0px;
+margin-top: auto;
+right: 0px;
+/* display: block; */
+position: absolute;
+
+width: 200px;
+background-color: rgba(0, 0, 0, 0.747);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+transition: 0.3s;
+opacity: 0;
+padding:  0px;
 }
 
 .navig a {
-    margin: 0 auto;
-    color: black;
-    padding-top: 10px;
-    text-decoration: none;
-    display: inline-block;
+margin: 0 auto;
+color: black;
+padding-top: 10px;
+text-decoration: none;
+display: inline-block;
 }
 
 .navig a:hover {background-color: #f1f1f1;}
 .dropmenu:hover .navig {
-    
- transition: 1s;
- opacity: 1;
- /* display: block; */
+
+transition: 1s;
+opacity: 1;
+/* display: block; */
 }
 .dropmenu:hover .dropbtn {
-    background-color: rgba(0, 0, 0, 0.747);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+background-color: rgba(0, 0, 0, 0.747);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
 
-    menu ul {
-         text-align: center;
-         box-sizing: border-box;
-    
-    }
-    
-    
-    menu ul li{
-    margin: 1px;
-    padding: 0px; 
-    display: inline-block;
-    }
+menu ul {
+text-align: center;
+box-sizing: border-box;
+
+}
+
+
+menu ul li{
+margin: 1px;
+padding: 0px; 
+display: inline-block;
+}
