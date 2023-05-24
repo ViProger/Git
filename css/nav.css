@@ -37,6 +37,19 @@ display: inline-block;
         
 } 
 
+
+
+@media (min-width: 1000px) {
+
+    nav {
+        display: block;
+    }
+
+    .dropmenu {
+        display: none;
+    }
+        
+} 
     
 .dropbtn {
    
