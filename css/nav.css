@@ -95,8 +95,9 @@ a:hover{
     right: 0px;
     /* display: block; */
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.747);
+    
     width: 200px;
+    background-color: rgba(0, 0, 0, 0.747);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     transition: 0.3s;
@@ -119,7 +120,9 @@ a:hover{
  opacity: 1;
  /* display: block; */
 }
-.dropmenu:hover .dropbtn {background-color: #3e8e41;}
+.dropmenu:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
 
     menu ul {
          text-align: center;
