@@ -194,3 +194,76 @@ div p {
 
 
 
+*{
+  /* font-family: 'Courier'; */
+  font-family: "Courier New";
+  /* font-family: 'Optima'; */
+  
+
+
+}
+
+body{
+background-size: cover;
+  background-attachment: fixed;
+background-image: url(../images/bg10.jpg);
+}
+
+
+
+
+#content {
+  text-align: center;
+  padding: 10px auto;
+  margin: 10px auto;
+  
+  width: 80vw;
+  min-height: 80vh;
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
+h1, h2 {
+  margin-top: 10px;
+  display: inline-block;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding: 2px;
+  letter-spacing: 5px;
+}
+
+h3 {
+ 
+  margin-top: 10px;
+  display: inline-block;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding: 2px;
+  letter-spacing: 5px;
+}
+
+
+h1:first-letter {
+  font-style: italic;
+  background-color: rgb(240, 255, 24);
+}
+
+h2:first-letter{
+  font-style: italic;
+  background-color: rgb(24, 255, 101);
+}
+
+p {
+  background-color: rgb(255, 255, 255);
+  margin: 0px 5%;
+  padding: 5px;
+  text-indent: 45px;
+  text-align: justify;
+}
+
+.attent {
+  font-weight: 800;
+  font-family: 'Optima';
+  font-size: 22pt;
+  color: rgb(163, 8, 8);
+}
+
