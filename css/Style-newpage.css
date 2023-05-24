@@ -13,9 +13,6 @@ background-size: cover;
 background-image: url(../images/bg10.jpg);
 }
 
-
-
-
 #content {
     text-align: center;
     padding: 10px auto;
@@ -70,4 +67,35 @@ p {
     font-size: 22pt;
     color: rgb(163, 8, 8);
 }
+/* Таблицы */
+        table {
+        max-width: 80%;
+        background-color: wheat;
+        }
 
+        table, tr, td {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+
+        padding: 5px;
+        empty-cells: hide;
+        border:  1px solid black;
+        }
+
+        th {
+        padding: 3px;
+        background-color: grey;
+      
+        }
+ 
+        .prim {
+            
+            padding: auto;
+            margin: auto;
+            background-color: rgb(156, 154, 154);
+            width: 50%;
+            background-color: rgb(233, 243, 88);
+            border-left: 3px dashed red;
+            border-radius: 4px 20px 20px 4px;
+        }
