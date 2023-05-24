@@ -1,0 +1,100 @@
+nav {
+margin: 0 auto;
+padding: 0 auto;
+box-sizing: border-box;
+}
+
+nav ul {
+
+ text-align: center;
+   border: 1px solid rgb(9, 255, 0);
+    border-left: 0px;
+    border-right: 0px;
+    box-sizing: border-box;
+
+}
+
+
+nav ul li{
+margin: 10px;
+padding: 5px; 
+display: inline-block;
+}
+
+        
+
+
+
+ @media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .dropmenu {
+        display: block;
+    }
+        
+} 
+
+    
+.dropbtn {
+   
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropmenu {
+    float: right;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.navig {
+    margin-top: auto;
+    right: 0px;
+    /* display: block; */
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s;
+    opacity: 0;
+    padding:  0px;
+}
+
+.navig a {
+    margin: 0 auto;
+    color: black;
+    padding-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navig a:hover {background-color: #f1f1f1;}
+.dropmenu:hover .navig {
+    
+ transition: 1s;
+ opacity: 1;
+ /* display: block; */
+}
+.dropmenu:hover .dropbtn {background-color: #3e8e41;}
+
+    menu ul {
+         text-align: center;
+         box-sizing: border-box;
+    
+    }
+    
+    
+    menu ul li{
+    margin: 1px;
+    padding: 0px; 
+    display: inline-block;
+    }

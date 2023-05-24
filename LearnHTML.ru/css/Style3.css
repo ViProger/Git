@@ -1,6 +1,8 @@
 body{
+  background-repeat: round;
     background-attachment: fixed;
-    background-image: url(../images/bg2.jpg);
+    background-clip: content-box ;
+    background-image: url(../images/bg8.jpeg);
 }
 
 .stops {
@@ -29,18 +31,29 @@ h1, h2 {
     background-color: rgb(0, 176, 207);
   }
 
-  div {
+  div  {
     background-color: rgba(211, 211, 211, 0.568);
+    /* background-image: url(../images/bg6.jpeg); */
+    background-repeat: round;
+    background-attachment: fixed;
+    background-clip: content-box ;
+
     padding: 5px;
     margin: auto;
     width: 60vw;
     min-height: 10vh;
   }
 
+div div {
+  width: 95%;
+  margin: auto;
+}
+
   p {
     text-align: justify;
     text-indent: 5%;
-    padding: 10px;
+    padding: 5px;
+    margin: 2px;
     background-color: rgba(255, 255, 255, 0.671);
   }
 
@@ -83,18 +96,38 @@ a li:hover {
   
 }
 
-xmp .xmp {
+xmp {
     text-align: justify;
     padding: auto;
     margin: auto;
     background-color: rgb(156, 154, 154);
     width: 80%;
+    padding: auto;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(233, 243, 88);
+    border-left: 3px dashed red;
+    border-radius: 4px 40px 4px 40px;
+}
+
+table {
+  width: 80%;
+  background-color: wheat;
 }
 
 table, tr, td {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  
     padding: 5px;
     empty-cells: hide;
     border:  1px solid black;
+}
+
+th {
+  padding: 3px;
+  background-color: grey;
 }
 
 .pust {
@@ -125,16 +158,8 @@ table, tr, td {
 
 }
 
-          xmp {
-            padding: auto;
-            margin: auto;
-            width: 80%;
-            background-color: rgb(233, 243, 88);
-            border-left: 3px dashed red;
-            border-radius: 4px 40px 4px 40px;
-          }
-
 .attent {
+
   font-size: 22pt;
   background-color: red;
 }
@@ -184,4 +209,53 @@ table, tr, td {
   width: 150px;
   border: 3px solid;
   border-radius: 100px;
+}
+
+.testbgcontent1 {
+
+
+  border: 5px dashed red;
+padding: 60px;
+margin-top: 10px;
+  width: 50%;
+  height: 200px;
+background-color: orange;
+
+
+background-clip: border-box; /* залезает под границу */
+
+
+}
+
+.testbgcontent2 {
+
+
+  border: 2px solid red;
+padding: 60px;
+padding-right: 30px;
+  width: 50%;
+  height: 200px;
+background-image: url(../images/smile.png);
+
+
+background-repeat: repeat;
+background-clip: content-box;
+
+
+}
+
+.testbgcontent3 {
+
+
+  border: 2px solid red;
+  width: 50%;
+  height: 200px;
+background-image: url(../images/smile.png);
+
+background: repeat;
+
+}
+
+.spanblock {
+  display: block;
 }
