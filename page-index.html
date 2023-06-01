@@ -86,81 +86,165 @@
 
 
 
+<h3>Выравнивание Flex элементов</h3>
 
 
+                    <p>Для выравнивания флексов используется свойство justify-content. Оно принимает много значений, таблицу с которыми вы увидите далее</p>
 
+                    <table>
+                        <tr>
+                            <th>Значение</th>
+                            <th>Описание</th>
+                        </tr>
 
+                        <tr>
+                            <td>Center</td>
+                            <td>Выравнивает элементы по центру</td>
+                        </tr>
 
+                        <tr>
+                            <td>Space-between</td>
+                            <td>Растягивает элементы по всей ширене с равномерными отступами. При этом первый элемент прижат к левой стороне а последний к правой</td>
+                        </tr>
 
+                        <tr>
+                            <td>Space-around</td>
+                            <td>Рястягивает элементы по всей ширене с равными отступами со всех сторон. При этом первый и последний элементы не прилипают к краям. <span class="attent">НЕ путать с space-between, в котором крайние элементы прилипают к краям</span></td>
+                        </tr> 
+                        
+                        <tr>
+                            <td>space-evenly</td>
+                            <td>Тоже похожее выравнивание, но в данном случае уже, все отступы между элементами равны со всемх сторон, и с краев и между элементами</td>
+                        </tr>
 
+                       
+                    </table>
 
 
 
+<h1>Абсолютное позиционирование элементов на CSS</h1>
 
+<p>Абсолютное позиционирование - элемент размещается на странице невзирая на присутствие других элементов по указанным координатам отсчитаным от левого верхнего угла браузера (экрана). При этом другие элементы в свою очередь веут себя так будто абсолютно позиционируемого объекта не существует (то есть они не двигаются никак он просто накладывается на них)</p>
 
+<p class="sintaksis">
+    position: absolute;
+</p>
 
 
+<p class="attent">Так же для позиционирования необходимо указать отступы сверху, снизу, справа, слева (top, bottom, right,left)</p>
 
 
 
+<h1>Относительное позиционирование элементов</h1>
 
+<p>Относительное позиционирование - сдвиг элемента относительно текущего положения, при этом все другие элементы воспринимают его так, буд-то он и не сдвигался (как будто он стоит слева сверху он объект находится по центру перекрывая другой текст например, так как тест думаюет что обект стоит слева сверху)</p>
 
 
+<p class="sintaksis">
+    position: relative;
+</p>
+<p class="attent">Смещение указывается с помощью отступов сверху, снизу, справа, слева (top, bottom, right,left).</p>
 
 
+<p class="attent">А так же если родителю не указать относительное позиционирование, то потомок будет позиционироваться относительно окна браузера!!!</p>
 
+<p>Давайте сделаем светофор</p>
 
+<div class="z1">
+<p class="wz1" style="background: red;"></p>
+<p class="wz1" style="background: yellow;"></p>
+<p class="wz1" style="background: green;"></p>
+</div>
 
+<br>
 
+<div class="z2">
+    <p class="wz24"></p>
+  <div class="zz2">
+        <p class="wz21"></p>
+        <p class="wz22"></p>
+        <p class="wz23"></p>
+  </div>
+  
+    </div>
 
 
+    <p>В предыдущем уроке мы с вами разобрали, что, если родителю задать relative, то его потомки будут абсолютно позиционироваться относительно него. Так чаще всего поступают, когда не хотят, чтобы родительский элемент выпал из нормального потока. Может быть и такое, что у родителя задан absolute. В этом случае потомки с absolute также будут позиционироваться относительно такого родителя, а не относительно окна браузера:</p>
 
 
+<p class="attent">Если элементу задать просто абсолютное позиционирование и не указать координаты, то он просто останется на месте, при этом все остальные обекты просто наедут на него сверху и все!!!</з>
 
 
+<h2>Центрирование через абсолютное позиционирование</h2>
 
+<p>С помощью абсолютного позиционирования можно центрировать объект, для этого нужно задать равный отступ со всех четрых сторон.</p>
 
+<h2>Отрицательные значения при позиционировании</h2>
 
+<p>Изученные нами свойства top, right, bottom и left могут принимать не только положительные, но и отрицательные значения. Это значит что если родительский объект стоит по центру, и потомки имеют отрицательное позиционирование, то они просто вылезут наружу родительского объекта</p>
 
+<h1>Фиксированное позиционирование</h1>
 
+<p>Фиксированное позиционирование работает примерно так же как и абсюлютное, Но если в случае с абсолютным позиционированием объект остаеться на месте и при прокрутке страницы листается вместе с содержимым, то фиксированное двигается вместе с прокруткой.  (например меню которое не пропадает пока вы читаете контент)</p>
 
+<h1>Наложение объектов по оси Z</h1>
 
+<p>По умолчанию, если элемент идет ниже в HTML, то и по оси Z он будет ниже тех что идут выше, тоесть он будет подкладываться под другие.</p>
 
+<h3>Регулировка положения</h3>
 
+<p>Чтобы отрегулированть порядок наложения используется свойство z-index, прнимающее целые положительные или отрицательные значения. Влияет только на элементы которые спозиционированны как absolute, fixed, relative. Принцип работы данного свойства следующий - чем больше значение тем выше объект.</p>
+<p>Если объекту не задан индекс, то он по умолчанию равен нулю (0)</p>
 
 
+<h1>Флоаты</h1>
+<br>
+<h2>Введение в свойства Float</h2>
 
+<p>Свойство Float указывает как обекты будут ОБТЕКАТЬ друг друга. Для примера сделаем блок с картинкой вначале и текстом:</p>
 
+<div class="primfloat">
+    
+    <p><img src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
 
 
+<p>В данном примере видно что текст уходит вниз относительно картинки. Давайте исправим это, добавив картинке свойство float со значением left (Чтобы картинка текла слева)</p>
 
 
+<div class="primfloat">
+    
+    <p><img style="float: left;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
 
+<p>Предположим что картинка находится не внутри абзаца а перед ним. В таком случае все будет работать точно так же как и работало</p>
 
 
+<div class="primfloat">
+    <img style="float: left;" src="images/smile.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
 
 
+<h2>Сочитание float и margin</h2>
 
+<p>Если мы зададим абзацам отступ то отодвинется только тот текст который не обтикает картинку (тот что идет под картинкой), сама же картинка так и будет прилипшей к краю родительского объекта. В тоже время если мы картинку поместить внутрь абзаца то картинка тоже сдвинется вместе с параграфом, так как отступ задается параграфу и соответственно его содержимому.</p>
 
 
+<div class="primfloat">
+    <img style="float: left;" src="images/smile.png" alt="">
+    <p style="margin-left: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
 
+<br>
+<br>
 
+<div class="primfloat">
+    
+    <p style="margin-left: 50px;"><img style="float: left;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<a href="https://code.mu/ru/markup/book/prime/float/padding-conjunction/#:~:text=%D0%A1%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D0%B5%20float%20%D0%B8%20padding"><h2>Сочетание float и padding</h2></a>
 
 
 
