@@ -17,7 +17,8 @@ background-image: url(../images/bg10.jpg);
     text-align: center;
     padding: 10px auto;
     margin: 10px auto;
-    
+ 
+    padding-top: 100px;
     width: 80vw;
     min-height: 80vh;
     background-color: rgba(255, 255, 255, 0.637);
@@ -120,4 +121,134 @@ p {
             border-left: 3px dashed red;
             border-radius: 4px 20px 20px 4px;
         }
-        
+
+
+
+
+
+
+
+
+
+ /* Воспомогательные элементы */
+       
+
+ /* Для практики */
+
+ .z1 
+ {
+     margin-bottom: 10px ;
+     left: 40%;
+     background: black;
+     height: 300px;
+     width: 200px;
+     position: relative;
+ } 
+
+ .wz1 
+ {
+     margin-top: 5px ;
+     top: 5%;
+     left: 25%;
+     height: 80px;
+     width: 80px;
+     border-radius: 50%;
+     position: relative;
+ } 
+
+
+ .z2 
+ {
+    border-radius:50% ;
+     margin-bottom: 10px ;
+     left: 40%;
+     background: black;
+     height: 400px;
+     width: 400px;
+     position: relative;
+ } 
+
+ .wz2 
+ {
+
+     margin-top: 5px ;
+     top: 5%;
+     left: 25%;
+     height: 80px;
+     width: 80px;
+     border-radius: 50%;
+     position: relative;
+ } 
+
+
+ .wz21 
+ {
+    border-radius: 50%;
+     margin-top: 5px ;
+     top: 25%;
+     left: 15%;
+     height: 50px;
+     width: 50px;
+     position: absolute;
+ } 
+
+ 
+ .wz22 
+ {
+    border-radius: 50%;
+     margin-top: 5px ;
+     top: 25%;
+     right: 15%;
+     height: 50px;
+     width: 50px;
+     position: absolute;
+ } 
+
+ .wz23 
+ {
+    border-radius: 50%;
+     margin-top: 5px ;
+     top: 50%;
+     right: 35%;
+     height: 50px;
+     width: 50px;
+     position: absolute;
+ } 
+
+ .zz2 {
+    border-radius:50% ;
+    margin-bottom: 10px ;
+    top: 10%;
+    left: 12%;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    width: 300px;
+    position: absolute;
+
+ }
+
+ .wz24 
+ {
+    border-radius:50% ;
+    margin-bottom: 10px ;
+    top: 12%;
+    left: 8%;
+    background: rgb(255, 255, 255);
+    height: 300px;
+    width: 280px;
+    position: absolute;
+ } 
+
+
+
+
+
+
+ /* примеры */
+
+ .primfloat {
+    background: green;
+    margin: auto;
+    border: 2px solid red;
+    width: 50%;
+ }
