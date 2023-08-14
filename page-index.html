@@ -2,8 +2,8 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="../LearnHtml/css/nav.css">
-        <link rel="stylesheet" href="../LearnHtml/css/Style-page-index.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/Style-page-index.css">
     </head>
 
     <body>
@@ -20,7 +20,7 @@
                         <a href="9.html"><li>Предидущие главы</li></a>
                         <a href="Mypage.html"><li>Моя страница</li></a>
                     </div>
-                    <a class="page-user" href="Mypage.html"><img id="ava1" src="../LearnHtml/images/ava1.png" alt=""></a>
+                    <a class="page-user" href="Mypage.html"><img id="ava1" src="../images/ava1.png" alt=""></a>
                 </ul>
             </nav>
        </header>
@@ -39,7 +39,7 @@
 
        
 
-        <div class="contenth1" id="content">
+        <div class="content1" id="content">
             <h1>
                 Выравнивание блочных элементов
             </h1>
@@ -82,11 +82,7 @@
 
                     <p>Если родителю задать значение display: inline-flex; то родитель будет вести себя как строчно-блочный элемент. В таком случае ширена родителя будет зависит от ширены потомком.</p>
 
-
-
-
-
-<h3>Выравнивание Flex элементов</h3>
+                    <h3>Выравнивание Flex элементов</h3>
 
 
                     <p>Для выравнивания флексов используется свойство justify-content. Оно принимает много значений, таблицу с которыми вы увидите далее</p>
@@ -203,7 +199,7 @@
 
 <p>Свойство Float указывает как обекты будут ОБТЕКАТЬ друг друга. Для примера сделаем блок с картинкой вначале и текстом:</p>
 
-<div class="primfloat">
+<div class="primfloat floatwidths">
     
     <p><img src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
 </div>
@@ -212,7 +208,7 @@
 <p>В данном примере видно что текст уходит вниз относительно картинки. Давайте исправим это, добавив картинке свойство float со значением left (Чтобы картинка текла слева)</p>
 
 
-<div class="primfloat">
+<div class="primfloat floatwidths">
     
     <p><img style="float: left;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
 </div>
@@ -220,7 +216,7 @@
 <p>Предположим что картинка находится не внутри абзаца а перед ним. В таком случае все будет работать точно так же как и работало</p>
 
 
-<div class="primfloat">
+<div class="primfloat floatwidths">
     <img style="float: left;" src="images/smile.png" alt="">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
 </div>
@@ -231,7 +227,7 @@
 <p>Если мы зададим абзацам отступ то отодвинется только тот текст который не обтикает картинку (тот что идет под картинкой), сама же картинка так и будет прилипшей к краю родительского объекта. В тоже время если мы картинку поместить внутрь абзаца то картинка тоже сдвинется вместе с параграфом, так как отступ задается параграфу и соответственно его содержимому.</p>
 
 
-<div class="primfloat">
+<div class="primfloat floatwidths">
     <img style="float: left;" src="images/smile.png" alt="">
     <p style="margin-left: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
 </div>
@@ -239,12 +235,335 @@
 <br>
 <br>
 
-<div class="primfloat">
+<div class="primfloat floatwidths">
     
     <p style="margin-left: 50px;"><img style="float: left;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
 </div>
 
 <a href="https://code.mu/ru/markup/book/prime/float/padding-conjunction/#:~:text=%D0%A1%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D0%B5%20float%20%D0%B8%20padding"><h2>Сочетание float и padding</h2></a>
+
+<p>Поставим снова картинку перед абзацами, оставив при этом левый padding. В этом случае padding отодвинет только тот текст который прилегает к диву-родителю (Тоесть только тот текст который не обтекает картинку, проще говоря только тот текст который находиться под картинку, тот текст который обтекает картинку останется неподвижен) </p>
+
+
+<div class="primfloat">
+    <img style="float: left;" src="images/smile.png" alt="">
+    <p style="margin-left: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+
+<p>А теперь поместим картинку внутрь первого абзаца</p>
+
+
+
+<div class="primfloat floatwidths">
+    
+    <p style="margin-left: 50px;"><img style="float: left;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+<h2>Отступы самой картинке</h2>
+<p>Давайте добавим правый margin самой картинке - в этом случае текст действительно отодвинется от правого края картинки</p>
+
+<div class="primfloat floatwidths">
+    
+    <p style="margin-left: 50px;"><img style="float: left; margin-left: 30px;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed. Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+<a href="https://code.mu/ru/markup/book/prime/float/padding-conjunction/#:~:text=%D0%A1%D0%BE%D1%87%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D0%B5%20float%20%D0%B8%20padding"><h2>Отступы плавающему элементу</h2></a>
+
+<p>Если мы добавим самой картинке (плавающему элементу) margin с необходимой стороны, то текст действительно отодвинеться от картинки с указанной стороны, если он ее обтекает там.</p>
+
+<p>Задание повторить следующее</p>
+<img src="images/Praktica1.5.png" alt="">
+
+<div class="praktfloat floatwidths">
+    
+    <p><img style="float: left; margin: 10px;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed.</p>
+    <p><img style="float: right; margin: 10px;" src="images/smile.png" alt="">Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+<a href="https://code.mu/ru/markup/book/prime/float/under-elements/#:~:text=%D0%9F%D0%BB%D0%B0%D0%B2%D0%B0%D1%8E%D1%89%D0%B8%D0%B5%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B%20%D0%BF%D0%BE%D0%B4%20%D1%82%D0%B5%D0%B3%D0%B0%D0%BC%D0%B8"><h2>Плавающие элементы под тегами</h2></a>
+
+
+<p>Предположим у нас сейчас есть два абзаца и в первом абзаце есть картинка. Ей задан Float в значении right, а так же полупрозрачность.</p>
+
+
+
+<div class="primfloat floatwidths">
+    
+    <p><img style="float: right; opacity: .5;" src="images/smile.png" alt="">Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed.</p>
+    <p>Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+<p>Теперь переместим картинку под первый абзац, что приведет к следующему результату</p>
+
+<div class="primfloat floatwidths">
+    
+    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed.</p><img style="float: right; opacity: .5;" src="images/smile.png" alt="">
+    <p>Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+
+<p>Как мы видим теперь картинка обтекает только второй абзац, первый остается не тронутым.</p>
+<p>А что если мы переместим картинку вообще в самый конец, то есть за пределы второго (последнего абзаца)</p>
+
+
+
+<div class="primfloat floatwidths">
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed.</p>
+    <p>Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p><img style="float: right; opacity: .5;" src="images/smile.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>В этой ситации мы наблюдает, что картинка так же плавает по правому краю. Но при этом не мешает тексту. Исходя из чего следует сделать вывод, что плавающий обект будет обтекать только те объекты которые находятся под ним, при это находясь в пределах его высоты (если картинка будет 100% то ввсе что находится под ней, n-е количество абзацев будут обтекать его.</p>
+
+<p>Для примера ввозьмем пред идущий div при этом зададим картинке следующие параметры: height: 250px; width: 450px; и мы увидим следующую картинку</p>
+
+<div class="primfloat floatwidths" >
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitorire. Aenean a dapibus magna, ac interdum nisl. Suspendisse egetil fringilla nibh, eu commodo arcu. Donec lacinia tempor velite sed tincidunt. Aliquam porttitor nulla purus, vel vulputater ipsum faucibus sed.</p><img style="float: right; opacity: .5; height: 250px; width: 450px; " src="images/smile.png" alt="">
+    <p>Phasellus sodales, lorem vel cursus vehi ante purus lacini dui, interdum fringilla massa eros ut duir. Nullam et ipsum ex. Donec ut iaculis massa. Duis vel ulamcor per dolor. Suspendisse tristique dolor risus, nec laoreet du aliquet maximus. Maecenas tempus congue arcu, si amet auctor dui efficitur in. Proin ac auctor nisi. Phasellus luctus eur neque sollicitudin rutrum. Curabitur ipsum justo, sodales in lectus non, molestie ullamcorper elit, orciro varius natoque.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<a href="https://code.mu/ru/markup/book/prime/float/parent-effect/#:~:text=%D0%94%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%D1%84%D0%BB%D0%BE%D0%B0%D1%82%D0%BE%D0%B2%20%D0%BD%D0%B0%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F"><h2>Действие флоат на родителя</h2></a>
+
+
+<p>Создадим DIV с картинкой ввнутри. при этом зададим диву границу а картинке не будем присваивать свойство Float </p>
+
+<div class="primfloat floatwidths">
+    <img src="images/smile.png" alt="">
+</div>
+
+<p>Теперь возьмем тот же DIV но при этом зададим картинке Float: left;</p>
+
+<div class="primfloat floatwidths">
+    <img style="float:left;" src="images/smile.png" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<p>Как мы можем заметить, наш родительский DIV схлопнулся, нижняя граница теперь идет сразу за первой и картинка вылезла за пределы родителя</p>
+<p>То есть объекты со свойством Float не расширяют своего родителя, даже если мы укажем значение float:right; от это измениться лишь то что обект с обтиканием начнетплавать по правому краю.</p>
+
+<p class="attent">Следует заметить что мы можем задать конкретную высоту родительскому объекту и при этом он будет расширен на указанную высоту, или например поместить в него текст, в таком случае высота данного объекта будет равна высоте текста</p>
+
+
+
+<a href="https://code.mu/ru/markup/book/prime/float/clearing/#:~:text=%D0%9E%D1%82%D0%BC%D0%B5%D0%BD%D0%B0%20%D0%BE%D0%B1%D1%82%D0%B5%D0%BA%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%20clear"><h2>Отмена обтекания с помощью свойства clear</h2></a>
+
+<p>Пусть у нас есть два дива с текстом и в первом размещена картинка с обтеканием. В таком случае, как мы знаем, картинка налезет на второй див, так как текста в нем мало.</p>
+
+<div class="primfloat floatwidths">
+    <img style="float:left;" src="images/smile.png" alt="">
+    <p>text</p>
+    <p>text</p>
+</div>
+
+
+<p>Для решения проблемы налезания картинки на второй и последующие абзацы, существует специалльное свойство clear, которое принемает одно из трех значений left, right или both.</p>
+
+<table>
+    <tr>
+        <th>Значение</th>
+        <th>Описание</th>
+    </tr>
+
+    <tr>
+        <td>left</td>
+        <td>Отмена обтекания слева</td>
+    </tr>
+
+    <tr>
+        <td>right</td>
+        <td>Отмена обтекания справа</td>
+    </tr>
+
+    <tr>
+        <td>both</td>
+        <td>отмена обтекания по двум сторонам</td>
+    </tr> 
+    
+   
+   
+</table>
+
+<p>Теперь двайте зададим второму параграфу отмену обтекания, и посмотрим что будет</p>
+
+
+
+<div class="primfloat floatwidths">
+    <img style="float:left;" src="images/smile.png" alt="">
+    <p>text</p>
+    <p style="clear:both">text</p>
+</div>
+
+<p>Как мы можем заметить, картинка обтекает теперь только первый параграф</p>
+
+<p>Обычно для отмены обекания используется отдельный DIV с классом clearfix который в свою очередь является общепринятым и его следует использоваться в дальнешем. Тоесть проще говоря перед блоком которому нужно отменить обтекание просто вставляют пустой DIV с классом clearfic, котрый в свою очередь содержит следующую запись clear: both;
+</p>
+
+
+
+
+<a href="https://code.mu/ru/markup/book/prime/float/parent-height-and-clearfix/#:~:text=%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9.-,%D0%9A%D0%BB%D0%B8%D0%B0%D1%80%D1%84%D0%B8%D0%BA%D1%81,-%D0%B8%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D0%B0%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F"><h2>clearfix и выоста родителя</h2></a>
+
+
+<p>Как мы уже знаем если мы поместим в пустой див картинку с обтеканием, то он схлопнеться в ноль и превратиться в простую полоску (если задана видимая граница мы это увидим)</p>
+
+
+
+<div class="primfloat floatwidths">
+    <img style="float:left;" src="images/smile.png" alt="">
+ 
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Давайте сделаем так чтобы плавающая картинка расширяла див в котором находится. Для этого после картинки добавим пустой див с классом clearfix</p>
+<div class="primfloat floatwidths">
+    <img style="float:left;" src="images/smile.png" alt="">
+    <div class="clearfix"></div>
+</div>
+
+
+
+<a href="https://code.mu/ru/markup/book/prime/float/blocks-floating/#:~:text=%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9.-,%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE,-float%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2"><h2>Свойство Float для блоков</h2></a>
+
+<p>Свойство обтикания применимо не только к картинкам но и к другим блокам. Давайте попробуем это.</p>
+
+<p>Создадим два див-родителя с классом parent, а внутри него еще один дви-потомок с классом child и текст. Обоим дивам зададим границу, а потомка еще и высоту и ширену.</p>
+
+<div style="border: 1px solid red;" class="primfloat parent floatwidths">
+    <div style="width: 200px; height: 100px; border: 1px solid gray;" class="child"></div>
+    Напримет вот такой текст
+</div>
+
+<p>Теперь давайте добавим потомку обтекние по левому краю</p>
+
+<div style="border: 1px solid red;" class="primfloat parent floatwidths">
+    <div style="float: left; width: 200px; height: 100px; border: 1px solid gray;" class="child"></div>
+    Напримет вот такой текст
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="https://code.mu/ru/markup/book/prime/float/several-blocks/#:~:text=%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9.-,%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE,-float%20%D0%B8%20%D0%BD%D0%B5%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE"><h2>Свойство Float и несколько блоков</h2></a>
+
+
+<p>Пусть тперь у нас есть два потомка с обтеканием по левому краю. Давайте посмотрим что из этого выйдет.</p>
+
+
+<div style="border: 1px solid red;" class=" primfloat parent floatwidths">
+    <div style="float: left; width: 200px; height: 100px; border: 1px solid gray; background: red;" class="child">1</div>
+    <div style="float: left; width: 200px; height: 100px; border: 1px solid gray; background: red;" class="child">2</div>
+    Напримет вот такой текст
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<p>Как мы можем заметить два потомка выстроились в ряд, если мы поставим обтекание справа то, будет та же картина за исключеим того, что объекты будут инвертированы (обратите внимание где первый потомок в HTML коде в первом варианте и где он находится во втором варианте)</p>
+
+
+<div style="border: 1px solid red;" class=" primfloat parent floatwidths">
+    <div style="float: right; width: 200px; height: 100px; border: 1px solid gray; background: red;" class="child">1</div>
+    <div style="float: right; width: 200px; height: 100px; border: 1px solid gray; background: red;" class="child">2</div>
+    Напримет вот такой текст
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>Тоесть при выравнивании обтекания по правому краю, обеъекты располагаются в зеркальной последовательности</p>
+
+
+<a href="https://code.mu/ru/markup/book/prime/float/parent-without-text/#:~:text=%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%B4%D0%BE%20%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9.-,%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE,-float%20%D0%B8%20%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"><h2>Свойство Float и несколько блоков</h2></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
