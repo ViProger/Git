@@ -61,12 +61,7 @@ p {
     text-align: justify;
 }
 
-.attent {
-    font-weight: 800;
-    font-family: 'Optima';
-    font-size: 22pt;
-    color: rgb(163, 8, 8);
-}
+
 /* Таблицы */
         table {
         max-width: 80%;
@@ -88,14 +83,37 @@ p {
         background-color: grey;
       
         }
- 
+/* Таблицы */
+
+/* Воспомогательные элементы */
         .prim {
             
             padding: auto;
-            margin: auto;
+            margin: 5px auto ;
             background-color: rgb(156, 154, 154);
             width: 50%;
             background-color: rgb(233, 243, 88);
             border-left: 3px dashed red;
             border-radius: 4px 20px 20px 4px;
         }
+
+        .attent {
+            font-weight: 800;
+            font-family: 'Optima';
+            font-size: 22pt;
+            color: rgb(163, 8, 8);
+        }
+        
+
+        .sintaksis {
+            
+            padding: 5px;
+            margin:  5px auto;
+           
+            background-color: rgb(156, 154, 154);
+            width: 50%;
+            background-color: rgb(78, 177, 107);
+            border-left: 3px dashed red;
+            border-radius: 4px 20px 20px 4px;
+        }
+        
